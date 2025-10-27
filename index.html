@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback System — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Feedback System</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#form">Feedback</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Lightweight HTML/CSS Demo</h2>
+      <p>This mini project is perfect for practicing Git/GitHub: add files, branch, open a pull request, and merge.</p>
+      <a class="btn" href="#form">Leave Feedback</a>
+    </div>
+  </section>
+
+  <section id="features" class="features container">
+    <article class="card">
+      <h3>Simple</h3>
+      <p>Only two files: <code>index.html</code> and <code>styles.css</code>. Easy to review in a PR.</p>
+    </article>
+    <article class="card">
+      <h3>Readable</h3>
+      <p>Clean, semantic HTML with a small, modern CSS layout.</p>
+    </article>
+    <article class="card">
+      <h3>Extendable</h3>
+      <p>Add pages, tweak styles, or create branches to demo collaboration.</p>
+    </article>
+  </section>
+
+  <section id="form" class="form container">
+    <h2>Student Feedback</h2>
+    <form>
+      <label for="name">Name</label>
+      <input id="name" name="name" placeholder="Your name" required>
+      <label for="course">Course</label>
+      <input id="course" name="course" placeholder="e.g., BSIT 3A">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Share your thoughts..." required></textarea>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer id="footer" class="site-footer">
+    <div class="container">
+      <small>© 2025 Feedback Demo • Built for Git/GitHub practice</small>
+    </div>
+  </footer>
+</body>
+</html>

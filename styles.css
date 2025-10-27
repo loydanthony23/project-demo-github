@@ -1,0 +1,68 @@
+/* Minimal modern CSS for the demo site */
+:root{
+  --bg: #0b1020;
+  --panel: #11162a;
+  --text: #e8efff;
+  --muted: #a9b4ce;
+  --accent: #7aa2ff;
+  --accent-2: #9ef0c1;
+  --border: #223155;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, Cantarell, Ubuntu, 'Helvetica Neue', sans-serif;
+  background: linear-gradient(180deg, var(--bg), #0e1530 40%, #0c172f 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:1.25rem}
+
+.site-header{
+  position:sticky;top:0;backdrop-filter:saturate(180%) blur(10px);
+  background: rgba(11,16,32,0.7);border-bottom:1px solid var(--border);
+}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.site-header h1{font-size:1.15rem;margin:0}
+.site-header nav a{
+  color:var(--muted);text-decoration:none;margin-left:1rem;font-weight:600
+}
+.site-header nav a:hover{color:var(--text)}
+
+.hero{
+  padding:4rem 0 3rem;border-bottom:1px solid var(--border);
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(122,162,255,0.25), transparent 60%),
+              radial-gradient(1000px 500px at 90% -20%, rgba(158,240,193,0.2), transparent 50%);
+}
+.hero h2{font-size:2rem;margin:0 0 .5rem}
+.hero p{max-width:56ch;color:var(--muted);margin:0 0 1.25rem}
+.btn{
+  display:inline-block;padding:.7rem 1rem;border-radius:12px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color:#0a1020;text-decoration:none;font-weight:800;border:0;cursor:pointer
+}
+.btn:hover{filter:brightness(1.05)}
+
+.features{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;
+  padding:2rem 1.25rem;
+}
+.card{
+  background:var(--panel);border:1px solid var(--border);border-radius:16px;
+  padding:1rem;box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+.card h3{margin:.25rem 0 .5rem}
+
+.form{padding:2rem 1.25rem}
+.form h2{margin-top:0}
+form{
+  background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:1rem;
+  display:grid;gap:.75rem;max-width:640px
+}
+input,textarea{
+  width:100%;padding:.7rem .8rem;border-radius:10px;border:1px solid var(--border);background:#0c1327;color:var(--text)
+}
+label{font-weight:700}
+.site-footer{border-top:1px solid var(--border);color:var(--muted);padding:1.5rem 0;margin-top:2rem;text-align:center}
