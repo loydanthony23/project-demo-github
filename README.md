@@ -27,6 +27,7 @@ git push -u origin main
 ```
 
 ## Collaboration Exercise
+0. git clone <remote>
 1. Create a branch: `git checkout -b feature/add-footer-links`
 2. Edit `index.html` to add helpful links in the footer.
 3. Commit & push: `git commit -am "feat: add footer links" && git push -u origin feature/add-footer-links`
